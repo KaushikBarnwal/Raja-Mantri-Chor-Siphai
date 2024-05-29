@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Open Sans', 'Lato', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.main {
+    width: 1000px;
+    height: 100vh;
+    position: relative;
+    border: 1px solid black;
+    flex: 3;
+}
+.card {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.aside {
+    width: 100px;
+    height: 100vh;
+    background-color: darkslategrey;
+    flex: 1;
+    border: 1px solid black;
+}
+#left { background-color: red; }
+#up { background-color: green; }
+#down { background-color: yellow; }
+#right { background-color: blue; }
+
+/* Default positions */
+#left { top: 50%; left: 12%; transform: translate(-50%, -50%); }
+#up { top: 50%; left: 37%; transform: translate(-50%, -50%); }
+#down { top: 50%; left: 62%; transform: translate(-50%, -50%); }
+#right { top: 50%; left: 87%; transform: translate(-50%, -50%); }
+/* Centered positions when a card is clicked */
+.center-bottom { top: calc(100% - 200px); left: 50%; transform: translate(-50%, 0); }
+.left-center { top: 50%; left: 12%; transform: translate(-50%, -50%); }
+.right-center { top: 50%; left: 87%; transform: translate(-50%, -50%); }
+.up-center { top: 0; left: 50%; transform: translate(-50%, 0); }

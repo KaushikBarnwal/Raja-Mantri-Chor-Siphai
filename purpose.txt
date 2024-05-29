@@ -1,0 +1,2 @@
+i want that from those 4 card if i click on anyone that clicked card will come below.
+and other 3 cards will go to the middle of other 3 edges.
